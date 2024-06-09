@@ -1,12 +1,12 @@
 import './App.css';
-import BT1 from './buoi2/bt1';
+import BT2 from './bt2/bt2';
 
 function App() {
   const now = new Date();
   console.log(now)
   return (
     <div>
-      <BT1/>
+      <BT2/>
     </div>
   );
 }
