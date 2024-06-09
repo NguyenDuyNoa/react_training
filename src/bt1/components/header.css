@@ -1,0 +1,16 @@
+.header{
+    display: flex;
+    justify-content: center;
+    background: gainsboro;
+    height: 60px;
+    align-items: center;
+}
+
+.item {
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+.active{
+    background-color: teal;
+}
