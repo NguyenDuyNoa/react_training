@@ -48,7 +48,7 @@ function HomePage() {
           <h2 className='text-white'>Sử dụng react-router-dom</h2>
         </Link>
       </div>
-    </div>
+    </div >
   )
 }
 

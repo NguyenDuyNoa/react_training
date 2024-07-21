@@ -18,7 +18,7 @@ function App() {
       <Route path="/bt1" element={<BT1/>}/>
       <Route path="/bt2" element={<BT2/>}/>
       <Route path="/bt3" element={<BT3/>}/>
-      <Route path="/bt4" element={<Home/>}>
+      <Route path="/bt4" element={<BT4/>}>
         <Route path='login' element={<Login/>}/>
         <Route path='register' element={<Register/>}/>
         <Route path='home' element={<Home/>}/>
