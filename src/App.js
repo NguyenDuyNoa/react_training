@@ -1,4 +1,4 @@
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, Navigate } from 'react-router-dom';
 import './App.css';
 import BT1 from './bt1/bt1';
 import BT2 from './bt2/bt2';
@@ -19,6 +19,7 @@ function App() {
       <Route path="/bt2" element={<BT2/>}/>
       <Route path="/bt3" element={<BT3/>}/>
       <Route path="/bt4" element={<BT4/>}>
+        <Route index element={<Navigate to="home" replace />} />
         <Route path='login' element={<Login/>}/>
         <Route path='register' element={<Register/>}/>
         <Route path='home' element={<Home/>}/>
