@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom'
 
 function HomePage() {
   return (
-    <div className='flex flex-col justify-center items-center'>
-      <h2 className='mt-6 mb-2 uppercase font-bold text-xl'>
+    <div className='p-3 flex flex-col justify-center items-center'>
+      <h2 className='mt-6 mb-2 uppercase font-bold text-xl text-center'>
         Chào mừng bạn đến với repo react_training
       </h2>
       <div>
@@ -18,8 +18,7 @@ function HomePage() {
         </p>
       </div>
 
-
-      <div className='grid grid-cols-4 gap-4'>
+      <div className='grid md:grid-cols-4 gap-4 grid-cols-2'>
         <Link to='/bt1' className=' bg-teal-600 rounded-xl p-3'>
           <h2 className='font-bold text-white'>Bài tập 1</h2>
           <img className=' w-60 rounded-md my-2' src="https://cdn.tgdd.vn/Files/2023/08/06/1541395/smartphone-tgdd-33312313-2-060823-210136-800-resize.jpg" alt="" />

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 function Products({item}) {
     return (
-        <Link to="#" className="bg-white rounded-md p-2 hover:bg-gray-200">
+        <Link to="#" className=" bg-[#f97c0038] rounded-md p-2 hover:bg-[#f97c00bb]">
             <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
                 <img src={item.url} alt={item.name} className=" w-full object-cover object-center group-hover:opacity-75" />
             </div>
