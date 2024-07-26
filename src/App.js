@@ -1,6 +1,6 @@
 import { Route, Routes, Navigate } from 'react-router-dom';
 import './App.css';
-import BT1 from './bt1/bt1';
+import BT1 from './bt1/buoi2/bt1';
 import BT2 from './bt2/bt2';
 import BT3 from './bt3/bt3';
 import BT4 from './bt4/bt4';
