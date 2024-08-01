@@ -13,7 +13,7 @@ function Header() {
                     </Link>
                     <div className="flex items-center lg:order-2">
                         <Link to="/bt4/login" className="text-gray-800  hover:bg-gray-50 ring-1 ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 0 focus:outline-none ">Log in</Link>
-                        <Link to="/bt4/register" className="text-white bg-[#F97D00] hover:bg-[#f97c00bb] focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2  focus:outline-none">Register</Link>
+                        <Link to="/bt4/register" className="text-white bg-[#F97D00] hover:bg-[#f97c00bb] font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2  focus:outline-none">Register</Link>
                     </div>
                     <div className="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
                         <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">

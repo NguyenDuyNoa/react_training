@@ -51,7 +51,7 @@ function Register() {
           <div className="flex items-center mt-8">
             <input id="remember-me" name="remember-me" type="checkbox" className="h-4 w-4 shrink-0 rounded" />
             <label htmlFor="remember-me" className="ml-3 block text-sm">
-              I accept the <Link to="javascript:void(0);" className="text-[#F97D00] font-semibold hover:underline ml-1">Terms and Conditions</Link>
+              I accept the <Link className="text-[#F97D00] font-semibold hover:underline ml-1">Terms and Conditions</Link>
             </label>
           </div>
           <div className="mt-8">

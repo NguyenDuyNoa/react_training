@@ -12,10 +12,9 @@ function Product() {
 
 
   return (
-    <div className="w-[85%] mx-auto">
+    <div className="md:w-[85%] mx-auto w-full">
       <div className="mx-auto max-w-2xl px-4 py-6 sm:px-6 sm:py-6 lg:max-w-7xl lg:px-6">
-        <h2 className="sr-only">Products</h2>
-        <div className="grid grid-cols-1 gap-x-2 gap-y-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 xl:gap-x-4">
+        <div className="grid grid-cols-2 gap-x-2 gap-y-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 xl:gap-x-4">
           {list.map((item, index) => (
             <Products key={index} item={item} />
           ))}

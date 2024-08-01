@@ -46,6 +46,13 @@ function HomePage() {
           <h2 className='font-bold text-white'>Shop bán sách</h2>
           <h2 className='text-white'>Sử dụng react-router-dom</h2>
         </Link>
+
+        <Link to='/bt5' className=' bg-[#B22830] rounded-xl p-3'>
+          <h2 className='font-bold text-white'>Bài tập 5</h2>
+          <img className=' w-60 rounded-md my-2' src="https://aeonmall-review-rikkei.cdn.vccloud.vn/test/public/wp/15/editors/v2fNKbijxVk5L3olsHnKeKJdLi9Hs1pPdffTBGkC.jpg" alt="" />
+          <h2 className='font-bold text-white'>Mini Highlands</h2>
+          <h2 className='text-white'>Sử dụng redux toolkit</h2>
+        </Link>
       </div>
     </div >
   )

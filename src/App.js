@@ -10,6 +10,8 @@ import Home from './bt4/pages/home';
 import HomePage from './homePage';
 import Product from './bt4/pages/product';
 import About from './bt4/pages/about';
+import BT5 from './bt5';
+import Cart from './bt5/components/cart';
 
 function App() {
   return (
@@ -26,6 +28,8 @@ function App() {
         <Route path='product' element={<Product/>}/>
         <Route path='about' element={<About/>}/>
       </Route>
+      <Route path="/bt5" element={<BT5/>}/>
+      <Route path="/bt5/cart" element={<Cart/>}/>
     </Routes>
   );
 }
