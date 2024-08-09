@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { notification } from "../../ultil/helper";
 
 const cart = JSON.parse(localStorage.getItem("cart")) ?? [];
 
@@ -27,14 +28,17 @@ const cartSlice = createSlice({
           quantity: newItem.quantity || 1,
         });
       }
-      alert("Đã thêm vào giỏ hàng!");
       localStorage.setItem("cart", JSON.stringify(state.cart));
+
+      notification("Add successfully!");
     },
+
     removeFromCart(state, action) {
       const idToRemove = action.payload;
       state.cart = state.cart.filter((item) => item.id !== idToRemove);
       localStorage.setItem("cart", JSON.stringify(state.cart));
     },
+
     updateCartItem(state, action) {
       const { id, quantity } = action.payload;
       state.cart = state.cart.map((item) =>
@@ -42,6 +46,7 @@ const cartSlice = createSlice({
       );
       localStorage.setItem("cart", JSON.stringify(state.cart));
     },
+
     fetchCartItems(state) {
       const cart = JSON.parse(localStorage.getItem("cart")) ?? [];
       state.cart = cart;
@@ -51,4 +56,5 @@ const cartSlice = createSlice({
 
 export const { addToCart, removeFromCart, updateCartItem, fetchCartItems } =
   cartSlice.actions;
+
 export default cartSlice.reducer;

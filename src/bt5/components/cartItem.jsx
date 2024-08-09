@@ -4,19 +4,23 @@ import CloseIcon from "@mui/icons-material/Close";
 import AddIcon from "@mui/icons-material/Add";
 import RemoveIcon from "@mui/icons-material/Remove";
 import { useDispatch } from "react-redux";
-import { removeFromCart, updateCartItem, fetchCartItems } from "../Redux/Slice/cartSlice";
+import { updateCartItem, fetchCartItems } from "../Redux/Slice/cartSlice";
+import { confirmAndRemoveFromCart } from "../ultil/helper";
 
 function CartItem({ item }) {
   const dispatch = useDispatch();
-  const priceNumber = parseFloat(item.price.replace(/,/g, ''));
-  
+  const priceNumber = parseFloat(item.price.replace(/,/g, ""));
+  const totalPrice = priceNumber * (item.quantity || 1);
+
   const handleRemove = () => {
-    dispatch(removeFromCart(item.id));
+    dispatch(confirmAndRemoveFromCart(item.id));
   };
 
   const handleDecrement = () => {
     if (item.quantity > 1) {
       dispatch(updateCartItem({ id: item.id, quantity: item.quantity - 1 }));
+    } else {
+      dispatch(confirmAndRemoveFromCart(item.id));
     }
   };
 
@@ -66,7 +70,7 @@ function CartItem({ item }) {
           </div>
           <div className="text-end md:order-4 md:w-32">
             <p className="text-base font-bold text-gray-900">
-              {new Intl.NumberFormat('vi-VN').format(priceNumber)} VNĐ
+              {new Intl.NumberFormat("vi-VN").format(totalPrice)} VNĐ
             </p>
           </div>
         </div>
