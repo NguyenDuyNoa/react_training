@@ -21,7 +21,6 @@ function Cart() {
 
   return (
     <div>
-      <Header />
       <section className="bg-white py-8 antialiased md:py-10">
         <div className="mx-auto max-w-screen-xl px-4 2xl:px-0">
           <h2 className="text-xl font-semibold text-gray-900 sm:text-2xl">

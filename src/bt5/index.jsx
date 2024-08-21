@@ -1,18 +1,14 @@
-import React from 'react'
-import ProductList from './components/productList'
-import Header from './components/header'
-import Banner from './components/banner'
-import Footer from './components/footer'
+import React from "react";
+import { Outlet } from "react-router-dom";
+import Header from "./components/header";
 
 function BT5() {
   return (
     <div>
-      <Header/>
-      <Banner/>
-      <ProductList/>
-      <Footer/>
+      <Header />
+      <Outlet />
     </div>
-  )
+  );
 }
 
-export default BT5
+export default BT5;
